@@ -38,3 +38,15 @@ app = Celery('celery_config', broker=adress, include=['celery_blog'])
 
 Where ```password``` is the primary key we got on the previous step and ```name_of_cache``` is the dns name you put when creating. This
 is also the name of the resource, when you search for it, so It's really easy to find it.
+
+## Explaining code and running it
+
+This is a really simple code example I did following this [blog post](https://www.agiliq.com/blog/2015/07/getting-started-with-celery-and-redis/). Each piece
+of code is explained with great detail on this post. You can get the instrucitons to run it reading the blog too. The only thing I tried to make easier, is installing
+dependencies. All the packages you need are inside ```requirements.txt``` file, and you can easily install running the command
+
+``` shell
+pip install -r requirements.txt
+```
+
+After that, you'll be able to run all the commmands on the blog post with a Redis Cache on Azure.
