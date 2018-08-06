@@ -10,16 +10,16 @@ It's really simple to create a Redis Cache with Azure, I'll help you through the
 
 Search for ```Redis Cache``` on Azure and then click on the link below services
 
-COLOCAR A IMAGEM AQUI
+![Redis Search](imgs/redis_search.PNG)
 
 After that, you will be redirected to a screen with all the Redis Caches you have created. Then click on Add, at the upper left of the page:
 
-COLOCAR IMAGEM AQUI
+![Add Redis](imgs/adding_redis.PNG)
 
 Just insert a unique DNS name on the first field, choose between creating a new resource group or use a existing one, choose pricing and click create.
 The creating of the resource will take some time.
 
-COLOCAR IMAGEM AQUI
+![Redis Details](imgs/redis_infos.PNG)
 
 ## Conecting Celery with the Azure Redis Cache
 
@@ -27,7 +27,7 @@ It's also really simple to connect Celery with the Redis created on Azure, but t
 help you trough the whole process.
 After creating the resource (as I explained on the steps before), go to it and click on the Acess Keys link:
 
-COLOCAR IMAGEM AQUI
+![Redis Keys](imgs/redis_keys.PNG)
 
 After getting this key, you'll be able to connect to celery like this (on the ```celery_config.py``` file):
 
